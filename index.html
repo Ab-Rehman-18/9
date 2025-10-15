@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays and objects</h1>
+    <script>
+        let name = ["john" , "doe" , "smith"];
+        console.log(name[2]);
+        console.log(name[0]);
+
+        name.push("Abdul Rehman");
+        name.push("Salman");
+        name.push("Rehhan");
+
+        console.log(name);
+        name.pop();
+        console.log(name);
+
+        name.unshift("Arman");
+        name.shift()
+        console.log(name);
+        console.log(name.length);
+        console.log(name.indexOf("doe"));
+
+       const sayHello = ()=>{
+console.log("Hello World");
+        };
+        sayHello();
+
+function sayFunc2(Func){
+Func();
+}
+
+sayFunc2(()=>{
+    console.log("I am from arrow function");
+});
+
+let friendNames = ["Abdul", "Salman Ali", "Rehan", "Ali"];
+
+friendNames.map((nm) => {
+    if(nm.includes("Ali"))
+  console.log(nm);
+});
+
+let ages = [3 , 6 ,10 , 18 , 28 ,30 , 40 , 50];
+
+ages.map((ag) => {
+    if (ag > 18){
+        console.log(ag);
+    }
+});
+
+let eligibleAges = ages.filter((ag) =>{
+if (ag > 18){
+    return ag;
+}
+
+});
+console.log(eligibleAges);
+
+const person = {
+    name : "Abdul Rehman",
+    city : "lahore",
+    age : "18"
+
+}
+console.log(person.name);
+
+const car = {
+  brand: "Toyota",
+  model: "Corolla",
+  color: "White",
+  year: 2022,
+  engine: "1.8L",
+  owner: "Abdul Rehman",
+  isAutomatic: true
+};
+
+console.log(car);
+
+
+    </script>
+</body>
+</html>
